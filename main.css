@@ -1,0 +1,140 @@
+ /* General styling */
+ body {
+   font-family: 'Open Sans', sans-serif;
+   background-size: cover;
+   background-position: center;
+   margin: 0;
+   padding: 0;
+ }
+
+ /* Navbar styling */
+ .navbar {
+   background-color: #343a40;
+   padding: 1rem;
+   margin-bottom: 20px;
+   /* Add margin bottom for gap */
+ }
+
+ .navbar .nav-link {
+   color: #f8f9fa !important;
+   font-size: 20px;
+   margin: 0 10px;
+   transition: color 0.3s ease;
+ }
+
+ .navbar .nav-link:hover {
+   color: #eb4500 !important;
+ }
+
+ .navbar .navbar-brand img {
+   height: 15vh;
+   /* Larger logo size */
+   width: auto;
+   margin-left: 20px;
+   border-radius: 20px;
+ }
+
+ /* Carousel styling */
+ .carousel-inner img {
+   width: 100%;
+   height: 100vh;
+   object-fit: cover;
+ }
+
+ .dropdown-item {
+   color: #eb4500;
+ }
+
+ /* Card styling */
+ .card {
+   margin: 2rem 0;
+   border-radius: 20px;
+   overflow: hidden;
+   gap: 50px;
+ }
+
+ .card1:hover {
+   transform: scale(1.5);
+ }
+
+ .card img {
+   width: 100%;
+   height: 300px;
+   object-fit: cover;
+ }
+
+ /* Container styling */
+ .container {
+   max-width: 1200px;
+   padding: 0 15px;
+ }
+
+ /* Footer styling */
+ footer {
+   background-color: #343a40;
+   color: white;
+   padding: 1rem 0;
+   margin-top: 20px;
+   /* Add top margin for separation */
+ }
+
+ footer p,
+ footer a {
+   color: white;
+   margin: 0;
+ }
+
+ footer .contact-info {
+   text-align: center;
+   /* Center align for smaller screens */
+   margin-top: 10px;
+ }
+
+ footer .contact-info i {
+   font-size: 18px;
+ }
+
+ footer .footer-columns {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+ }
+
+ footer .footer-columns div {
+   flex: 1;
+   padding: 10px;
+   text-align: center;
+ }
+
+ footer .social-icons {
+   display: flex;
+   justify-content: center;
+   gap: 15px;
+   margin-top: 10px;
+ }
+
+ footer .social-icons i {
+   font-size: 24px;
+   color: white;
+ }
+
+ @media (max-width: 767px) {
+   .navbar .nav-link {
+     font-size: 16px;
+   }
+
+   .card img {
+     height: 200px;
+   }
+
+   footer .contact-info {
+     flex-direction: column;
+     text-align: center;
+   }
+
+   footer .footer-columns {
+     flex-direction: column;
+     text-align: center;
+   }
+ }

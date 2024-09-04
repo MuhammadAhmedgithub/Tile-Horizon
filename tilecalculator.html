@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tile Calculator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" size="264x264" href="images/ali logo.png">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="check.css">
+
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 700px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+      width: calc(100% - 20px);
+      padding: 10px;
+      margin: 10px 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #007BFF;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: calc(48% - 10px);
+      margin: 10px 5px;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .results,
+    .conversion {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #e9ecef;
+      border-radius: 4px;
+    }
+
+    .results p,
+    .conversion p {
+      margin: 5px 0;
+      color: #333;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    @media (max-width: 480px) {
+      button {
+        width: calc(100% - 20px);
+        margin: 10px auto;
+      }
+    }
+  </style>
+</head>
+
+<body background="bg.jpeg">
+  <!-- Navbar start -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <!-- Navbar logo -->
+          <img src="images/ali logo.png" class="img-fluid" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <!-- Home link -->
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <!-- Categories dropdown -->
+              <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Categories
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="categoriesDropdown">
+                <li><a class="dropdown-item" href="category.html" target="_blank">
+                    <h1>CATEGORIES</h1>
+                  </a></li>
+                <li><a class="dropdown-item" href="wall tiles.html">Wall Tiles</a></li>
+                <li><a class="dropdown-item" href="special tiles.html">Special Tiles</a></li>
+                <li><a class="dropdown-item" href="floor tiles.html">Floor Tiles</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <!-- About link -->
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <!-- Contact Us link -->
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <!-- Login link -->
+              <a class="nav-link" href="login.html">Login/Sign Up</a>
+            </li>
+
+            <li class="nav-item">
+              <!-- E-Catalogue link -->
+              <a class="nav-link" href="ecatalogue.html" >E-Catalogue</a>
+            </li>
+            <li class="nav-item">
+              <!-- Compare link -->
+              <a class="nav-link" href="compare.html">Compare</a>
+            </li>
+            <li class="nav-item dropdown">
+              <!-- Categories dropdown -->
+              <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Expert Blog
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="categoriesDropdown">
+                <li><a class="dropdown-item" href="tilecalculator.html">Tiles Calculator </a></li>
+                <li><a class="dropdown-item" href="tileguide.html">Tile Guide</a></li>
+                <li><a class="dropdown-item" href="educationalguide.html">Educational videos</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Navbar end -->
+
+
+  <!-- Tile Calculator -->
+  <div class="container">
+    <h2>Tile Calculator</h2>
+    <div style="text-align: center;">
+      <button onclick="showFeet()">Feet</button>
+      <button onclick="showMeters()">Meters</button>
+    </div>
+
+    <div id="feetInputs">
+      <label for="roomLengthFeet">Room Length (feet):</label>
+      <input type="number" id="roomLengthFeet" value="32">
+
+      <label for="roomWidthFeet">Room Width (feet):</label>
+      <input type="number" id="roomWidthFeet" value="23">
+
+      <label for="tileLengthInches">Tile Length (inches):</label>
+      <input type="number" id="tileLengthInches" value="12">
+
+      <label for="tileWidthInches">Tile Width (inches):</label>
+      <input type="number" id="tileWidthInches" value="12">
+
+      <label for="tilePriceFeet">Tile Price (per sqft):</label>
+      <input type="number" id="tilePriceFeet" value="34">
+
+      <button onclick="calculateTilesFeet()">Calculate (Feet)</button>
+    </div>
+
+    <div id="metersInputs" class="hidden">
+      <label for="roomLengthMeters">Room Length (meters):</label>
+      <input type="number" id="roomLengthMeters" value="10">
+
+      <label for="roomWidthMeters">Room Width (meters):</label>
+      <input type="number" id="roomWidthMeters" value="7">
+
+      <label for="tileLengthCm">Tile Length (cm):</label>
+      <input type="number" id="tileLengthCm" value="30">
+
+      <label for="tileWidthCm">Tile Width (cm):</label>
+      <input type="number" id="tileWidthCm" value="30">
+
+      <label for="tilePriceMeters">Tile Price (per sqm):</label>
+      <input type="number" id="tilePriceMeters" value="365">
+
+      <button onclick="calculateTilesMeters()">Calculate (Meters)</button>
+    </div>
+
+    <div class="results">
+      <p>Total Area = <span id="totalArea"></span></p>
+      <p>Number of Tiles = <span id="numTiles"></span></p>
+      <p>Tiles Cost = <span id="totalCost"></span></p>
+    </div>
+  </div>
+
+
+
+
+  <script>
+    function showFeet() {
+      document.getElementById('feetInputs').classList.remove('hidden');
+      document.getElementById('metersInputs').classList.add('hidden');
+      clearResults();
+    }
+
+    function showMeters() {
+      document.getElementById('metersInputs').classList.remove('hidden');
+      document.getElementById('feetInputs').classList.add('hidden');
+      clearResults();
+    }
+
+    function clearResults() {
+      document.getElementById("totalArea").textContent = '';
+      document.getElementById("numTiles").textContent = '';
+      document.getElementById("totalCost").textContent = '';
+    }
+
+    function calculateTilesFeet() {
+      // Get input values
+      var roomLength = parseFloat(document.getElementById("roomLengthFeet").value);
+      var roomWidth = parseFloat(document.getElementById("roomWidthFeet").value);
+      var tileLength = parseFloat(document.getElementById("tileLengthInches").value);
+      var tileWidth = parseFloat(document.getElementById("tileWidthInches").value);
+      var tilePrice = parseFloat(document.getElementById("tilePriceFeet").value);
+
+      // Calculate area
+      var totalArea = roomLength * roomWidth;
+      document.getElementById("totalArea").textContent = totalArea.toFixed(2) + ' Sqft';
+
+      // Calculate tiles needed
+      var tilesNeeded = (totalArea * 144) / (tileLength * tileWidth);
+      document.getElementById("numTiles").textContent = Math.ceil(tilesNeeded) + ' Tiles';
+
+      // Calculate total cost
+      var totalCost = tilesNeeded * tilePrice;
+      document.getElementById("totalCost").textContent = '$' + totalCost.toFixed(2);
+    }
+
+    function calculateTilesMeters() {
+      // Get input values
+      var roomLength = parseFloat(document.getElementById("roomLengthMeters").value);
+      var roomWidth = parseFloat(document.getElementById("roomWidthMeters").value);
+      var tileLength = parseFloat(document.getElementById("tileLengthCm").value);
+      var tileWidth = parseFloat(document.getElementById("tileWidthCm").value);
+      var tilePrice = parseFloat(document.getElementById("tilePriceMeters").value);
+
+      // Calculate area
+      var totalArea = roomLength * roomWidth;
+      document.getElementById("totalArea").textContent = totalArea.toFixed(2) + ' Sqm';
+
+      // Calculate tiles needed
+      var tilesNeeded = (totalArea * 10000) / (tileLength * tileWidth);
+      document.getElementById("numTiles").textContent = Math.ceil(tilesNeeded) + ' Tiles';
+
+      // Calculate total cost
+      var totalCost = totalArea * tilePrice;
+      document.getElementById("totalCost").textContent = '$' + totalCost.toFixed(2);
+    }
+  </script>
+  <script src="tiles.js"></script>
+  <!-- Bootstrap Dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>

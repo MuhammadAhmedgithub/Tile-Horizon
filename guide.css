@@ -1,0 +1,61 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+header {
+
+    color: #2958af;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+}
+
+main {
+    padding: 20px;
+}
+
+.guide-intro,
+.tile-types,
+.tile-selection,
+.tile-care {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #2958af;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.tile-type {
+    margin-bottom: 30px;
+}
+
+.tile-type h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.tile-image {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}

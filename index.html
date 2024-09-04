@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title -->
+  <title>TILE HORIZON</title>
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" size="264x264" href="images/ali logo.png">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="check.css">
+
+
+</head>
+
+<body background="bg.jpeg">
+  <!-- Navbar start -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <!-- Navbar logo -->
+          <img src="images/ali logo.png" class="img-fluid" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <!-- Home link -->
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <!-- Categories dropdown -->
+              <a class="nav-link dropdown-toggle" href="#" target="_blank" id="categoriesDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Categories
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="categoriesDropdown">
+                <li><a class="dropdown-item" href="category.html" target="_blank">
+                    <h1>CATEGORIES</h1>
+                  </a></li>
+                <li><a class="dropdown-item" href="wall tiles.html" target="_blank">Wall Tiles</a></li>
+                <li><a class="dropdown-item" href="special tiles.html" target="_blank">Special Tiles</a></li>
+                <li><a class="dropdown-item" href="floor tiles.html" target="_blank">Floor Tiles</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <!-- About link -->
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <!-- Contact Us link -->
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <!-- Login link -->
+              <a class="nav-link" href="login.html">Login/Sign Up</a>
+            </li>
+
+            <li class="nav-item">
+              <!-- E-Catalogue link -->
+              <a class="nav-link" href="ecatalogue.html">E-Catalogue</a>
+            </li>
+            <li class="nav-item">
+              <!-- Compare link -->
+              <a class="nav-link" href="compare.html">Compare</a>
+            </li>
+            <li class="nav-item dropdown">
+              <!-- Categories dropdown -->
+              <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Expert Blog
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="categoriesDropdown">
+                <li><a class="dropdown-item" href="tilecalculator.html">Tiles Calculator </a></li>
+                <li><a class="dropdown-item" href="tileguide.html">Tile Guide</a></li>
+                <li><a class="dropdown-item" href="educationalguide.html">Educational videos</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Navbar end -->
+
+  <section>
+    <!-- Image Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <!-- Carousel image 1 -->
+          <img src="https://mastertiles.com/storage/2022/02/166.origRGB.0000-scaled.jpg" class="d-block w-100"
+            alt="...">
+        </div>
+        <div class="carousel-item">
+          <!-- Carousel image 2 -->
+          <img src="https://mastertiles.com/storage/2020/07/RE8.origRGB.0000@0.5x-1-scaled.jpg" class="d-block w-100"
+            alt="...">
+        </div>
+        <div class="carousel-item">
+          <!-- Carousel image 3 -->
+          <img src="https://www.kajariaceramics.com/concept-picture/high002617.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <!-- Carousel controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Cards Section -->
+  <h1 style="text-align: center;margin-top: 30px;color: #eb4500; font-weight: 900;">TOP SELLING PRODUCT</h1>
+  <section class="container mt-5">
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card shadow">
+          <img src="https://www.hrjohnsonindia.com/assets/media/concept/big/RT1218-C158.jpg?" class="card-img-top"
+            alt="Wall Tiles" height="40px">
+          <div class="card-body">
+            <h3 class="card-title">Wall Tiles</h3>
+            <p class="card-text"><i>Discover a wide range of wall tiles with beautiful designs and textures and
+                designs.</i></p>
+            <a href="https://5.imimg.com/data5/SELLER/Default/2023/10/357349456/WL/TN/QJ/69656835/bedroom-floor-tiles-500x500.jpg"
+              class="btn btn-primary">Explore Wall Tiles</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card shadow">
+          <img
+            src="https://5.imimg.com/data5/SELLER/Default/2023/10/357349456/WL/TN/QJ/69656835/bedroom-floor-tiles-500x500.jpg"
+            class="card-img-top" alt="Floor Tiles">
+          <div class="card-body">
+            <h3 class="card-title">Floor Tiles</h3>
+            <p class="card-text"><i>Explore our collection of floor tiles that combine durability with style for every
+                room.</i></p>
+            <a href="floor tiles.html" class="btn btn-primary">Explore Floor Tiles</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card shadow">
+          <img
+            src="https://image.made-in-china.com/202f0j00msvUDEebCaoV/600X600-mm-Decoration-Special-Design-Flooring-Ceramic-Tile.webp"
+            class="card-img-top" alt="Special Tiles">
+          <div class="card-body">
+            <h3 class="card-title">Special Tiles</h3>
+            <p class="card-text"><i>Uncover our special tiles designed for unique looks and enhanced
+                functionalities.</i></p>
+            <a href="special tiles.html" class="btn btn-primary">Explore Special Tiles</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOP BRANDS  -->
+  <section>
+    <div class="container mt-5">
+      <h1 class="text-center"><span style="color: #eb4500;font-family: sans-serif; font-weight: bold;">TOP</span>
+        CATEGORIES
+        <hr class="mx-auto w-25">
+      </h1>
+      <br>
+      <div class="row">
+        <div class="col-md-2 col-lg-2 col-sm-12">
+          <div class="card">
+            <img src="images/T12.jpg" class="" alt="..." style="height: 195px;">
+          </div>
+        </div>
+        <div class="col-md-2 col-lg-2 col-sm-12">
+          <div class="card">
+            <img src="images/T10.png" class="" alt="..." style="height: 195px;">
+          </div>
+        </div>
+        <div class="col-md-2 col-lg-2 col-sm-12">
+          <div class="card">
+            <img src="images/T8.jpg" class="" alt="..." style="height: 195px;">
+          </div>
+        </div>
+        <div class="col-md-2 col-lg-2 col-sm-12">
+          <div class="card">
+            <img src="images/T9.jpg" class="" alt="..." style="height: 195px;">
+          </div>
+        </div>
+        <div class="col-md-2 col-lg-2 col-sm-12">
+          <div class="card">
+            <img src="images/T4.png" class="" alt="..." style="height: 195px;">
+          </div>
+        </div>
+        <div class="col-md-2 col-lg-2 col-sm-12">
+          <div class="card">
+            <img src="images/T11.jpg" class="" alt="..." style="height: 195px;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Footer start -->
+  <footer class="bg-dark text-white mt-5">
+    <div class="container py-4">
+      <div class="footer-columns">
+        <div class="col-md-4 mb-3 text-center">
+          <!-- Footer logo -->
+          <img src="images/ali logo.png" class="img-fluid" alt="Logo" style="height: 140px;"> <!-- Larger logo size -->
+          <p>&copy; 2024 Tile Horizon. All rights reserved.</p>
+        </div>
+
+        <div class="col-md-4 text-center">
+          <!-- Categories in footer -->
+
+          <ul class="list-unstyled">
+            <li><a href="category.html" target="_blank">
+                <h1>CATEGORIES</h1>
+              </a></li>
+            <li><a href="wall tiles.html" target="_blank">Wall Tiles</a></li>
+            <li><a href="special tiles.html" target="_blank">Special Tiles</a></li>
+            <li><a href="floor tiles.html" target="_blank">Floor Tiles</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-3 text-center">
+          <!-- Contact information -->
+          <div class="contact-info">
+            <h5>Contact Us</h5>
+            <p><i class="fas fa-envelope"></i> info@tilehorizon.com</p>
+            <p><i class="fas fa-phone"></i> +1 (234) 567-890</p>
+          </div>
+        </div>
+        <div class="col-md-4 text-center">
+          <!-- Social media icons -->
+          <div class="social-icons">
+            <a href="https://www.facebook.com/TileHorizon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/TileHorizon" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com/TileHorizon" target="_blank"><i class="fab fa-twitter"></i></a>
+            <i class="fa fa-envelope" style="font-size:24px"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer end -->
+
+  <script src="tiles.js"></script>
+  <!-- Bootstrap Dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

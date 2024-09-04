@@ -1,0 +1,129 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #2958af;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+}
+
+main {
+    padding: 20px;
+}
+
+.catalogue-section {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.catalogue-section h2 {
+    color: #333;
+    border-bottom: 2px solid #2958af;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.catalogue-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #32cd32;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cta-button:hover {
+    background-color: #228b22;
+}
+
+.tile-info-section {
+    margin: 20px auto;
+}
+
+.tile-info-section h2 {
+    color: #333;
+    border-bottom: 2px solid #2958af;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.tile-type {
+    margin-bottom: 40px;
+}
+
+.tile-type h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #2958af;
+}
+
+.tile-images {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.tile-image {
+    width: calc(33.33% - 10px);
+    border-radius: 8px;
+}
+
+.tile-type p {
+    font-size: 1em;
+    color: #666;
+}
+
+
+@media (max-width: 768px) {
+
+    header,
+    main {
+        padding: 10px;
+    }
+
+    .catalogue-section h2,
+    .tile-info-section h2 {
+        font-size: 1.5em;
+    }
+
+    .cta-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .tile-type h3 {
+        font-size: 1.2em;
+    }
+
+    .tile-images {
+        flex-direction: column;
+    }
+
+    .tile-image {
+        width: 100%;
+    }
+}

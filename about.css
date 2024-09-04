@@ -1,0 +1,143 @@
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #003366;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #00509e;
+    border-radius: 5px;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.section-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section-content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #003366;
+}
+
+.section-content p {
+    margin-bottom: 20px;
+}
+
+.section-content ul {
+    text-align: left;
+    display: inline-block;
+    padding: 0;
+    list-style-type: none;
+}
+
+.section-content ul li {
+    background: #f1f1f1;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-info img {
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #003366;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+    background-color: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: sticky;
+    bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .section-content h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-content ul {
+        width: 100%;
+    }
+
+    .section-content ul li {
+        font-size: 0.9em;
+    }
+}

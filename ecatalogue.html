@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Catelogue</title>
+    <link rel="stylesheet" href="catalogue.css">
+    <link rel="shortcut icon" href="images/ali logo.png" type="image/x-icon">
+
+
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #2958af;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2em;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .catalogue-section {
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        .catalogue-section h2 {
+            color: #333;
+            border-bottom: 2px solid #2958af;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .catalogue-section p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            padding: 10px 20px;
+            background-color: #32cd32;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .cta-button:hover {
+            background-color: #228b22;
+        }
+
+        .tile-info-section {
+            margin: 20px auto;
+        }
+
+        .tile-info-section h2 {
+            color: #333;
+            border-bottom: 2px solid #2958af;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .tile-type {
+            margin-bottom: 40px;
+        }
+
+        .tile-type h3 {
+            margin: 0;
+            font-size: 1.5em;
+            color: #2958af;
+        }
+
+        .tile-images {
+            display: flex;
+            gap: 10px;
+            margin: 10px 0;
+            flex-wrap: wrap;
+        }
+
+        .tile-image {
+            width: calc(33.33% - 10px);
+            border-radius: 8px;
+        }
+
+        .tile-type p {
+            font-size: 1em;
+            color: #666;
+        }
+
+
+        @media (max-width: 768px) {
+
+            header,
+            main {
+                padding: 10px;
+            }
+
+            .catalogue-section h2,
+            .tile-info-section h2 {
+                font-size: 1.5em;
+            }
+
+            .cta-button {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+
+            .tile-type h3 {
+                font-size: 1.2em;
+            }
+
+            .tile-images {
+                flex-direction: column;
+            }
+
+            .tile-image {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>E-CATELOGUE</h1>
+        <p>Download our complete tile catalogue to explore our full range of products.</p>
+    </header>
+
+    <main>
+       
+        <section class="tile-info-section">
+            <h2>Our Tile Range</h2>
+            <div class="tile-type">
+                <h3>Glazed Vitrified Tiles</h3>
+                <div class="tile-images">
+                    <img src="https://decorcera.com/images/polished-glazed-vitrified-tiles-in-India.jpg"
+                        alt="Glazed Vitrified Tile 1" class="tile-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIlRUaxc9Kb5oww39RnolnoxxfF0LT0Ts6kQ&s"
+                        alt="Glazed Vitrified Tile 2" class="tile-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn_RtG-EFq_OS4B0xDoRAqk1Y0_h4E1J1ibA&s"
+                        alt="Glazed Vitrified Tile 3" class="tile-image">
+                </div>
+                <p>Glazed vitrified tiles are made from a blend of clay, silica, and other materials that are heated to
+                    high temperatures. They have a glossy finish and are highly durable, making them ideal for
+                    high-traffic areas.</p>
+            </div>
+            <div class="tile-type">
+                <h3>Ceramic Tiles</h3>
+                <div class="tile-images">
+                    <img src="https://media.licdn.com/dms/image/D4D12AQFqCeKnRPCSdA/article-cover_image-shrink_720_1280/0/1688033531963?e=2147483647&v=beta&t=EBmiJIEk-D9VTgrII8buHQ_bSSc9BHK9Z9lxbexO1ik"
+                        alt="Ceramic Tile 1" class="tile-image">
+                    <img src="https://www.nitco.in/nitcoassets/blog/main/wood-weave.jpg" alt="Ceramic Tile 2"
+                        class="tile-image">
+                    <img src="https://cruso.in/uploads/pages/Porcelain%20tiles.webp" alt="Ceramic Tile 3"
+                        class="tile-image">
+                </div>
+                <p>Ceramic tiles are made from clay that is fired at high temperatures. They come in a variety of
+                    colors, patterns, and finishes, making them suitable for both walls and floors.</p>
+            </div>
+            <div class="tile-type">
+                <h3>Polished Tiles</h3>
+                <div class="tile-images">
+                    <img src="https://www.tileafrica.co.za/media/catalog/product/cache/15aba8920cca7392444b25b9ed706d44/image/57713bd9/statuario-venato-pol-hardbody-floor-tile-600x600mm-1-44m2.jpg"
+                        alt="Polished Tile 1" class="tile-image">
+                    <img src="https://westerndistributors.com.au/wp-content/uploads/2021/05/superb-callacutta-1.jpg"
+                        alt="Polished Tile 2" class="tile-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRabnavyImNaxmSqN-9TTvnArbnSt5waWNobA&s"
+                        alt="Polished Tile 3" class="tile-image">
+                </div>
+                <p>Polished tiles have a smooth, glossy surface achieved through a polishing process. They offer a
+                    sophisticated look and are commonly used in both residential and commercial spaces.</p>
+            </div>
+        </section>
+        <section class="catalogue-section">
+            <h2>Download Our e-Catalogue</h2>
+            <p>Explore our complete range of tiles including Glazed Vitrified Tiles, Ceramic Tiles, Polished Tiles, and more.</p>
+            <a href="download" class="cta-button" download>Download Catalogue</a>
+        </section>
+    </main>
+
+</body>
+
+</html>
